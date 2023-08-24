@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
+		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
+		AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* ViewController.swift */; };
+		AF2F76332A96E84000590949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76322A96E84000590949 /* Assets.xcassets */; };
+		AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76342A96E84000590949 /* LaunchScreen.storyboard */; };
+		AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76402A96E84100590949 /* Verity_iOSTests.swift */; };
+		AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */; };
+		AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF2F763D2A96E84100590949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2F761E2A96E83D00590949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2F76252A96E83D00590949;
+			remoteInfo = "Verity iOS";
+		};
+		AF2F76472A96E84100590949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2F761E2A96E83D00590949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2F76252A96E83D00590949;
+			remoteInfo = "Verity iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF2F762D2A96E83D00590949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF2F76322A96E84000590949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF2F76352A96E84000590949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF2F76372A96E84000590949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F76402A96E84100590949 /* Verity_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSTests.swift; sourceTree = "<group>"; };
+		AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITests.swift; sourceTree = "<group>"; };
+		AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2F76232A96E83D00590949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F76392A96E84100590949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F76432A96E84100590949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF2F761D2A96E83D00590949 = {
+			isa = PBXGroup;
+			children = (
+				AF2F76282A96E83D00590949 /* Verity iOS */,
+				AF2F763F2A96E84100590949 /* Verity iOSTests */,
+				AF2F76492A96E84100590949 /* Verity iOSUITests */,
+				AF2F76272A96E83D00590949 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2F76272A96E83D00590949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76262A96E83D00590949 /* Verity iOS.app */,
+				AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */,
+				AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2F76282A96E83D00590949 /* Verity iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
+				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
+				AF2F762D2A96E83D00590949 /* ViewController.swift */,
+				AF2F76322A96E84000590949 /* Assets.xcassets */,
+				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
+				AF2F76372A96E84000590949 /* Info.plist */,
+			);
+			path = "Verity iOS";
+			sourceTree = "<group>";
+		};
+		AF2F763F2A96E84100590949 /* Verity iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76402A96E84100590949 /* Verity_iOSTests.swift */,
+			);
+			path = "Verity iOSTests";
+			sourceTree = "<group>";
+		};
+		AF2F76492A96E84100590949 /* Verity iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */,
+				AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */,
+			);
+			path = "Verity iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2F76252A96E83D00590949 /* Verity iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F76502A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOS" */;
+			buildPhases = (
+				AF2F76222A96E83D00590949 /* Sources */,
+				AF2F76232A96E83D00590949 /* Frameworks */,
+				AF2F76242A96E83D00590949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Verity iOS";
+			productName = "Verity iOS";
+			productReference = AF2F76262A96E83D00590949 /* Verity iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF2F763B2A96E84100590949 /* Verity iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F76532A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSTests" */;
+			buildPhases = (
+				AF2F76382A96E84100590949 /* Sources */,
+				AF2F76392A96E84100590949 /* Frameworks */,
+				AF2F763A2A96E84100590949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2F763E2A96E84100590949 /* PBXTargetDependency */,
+			);
+			name = "Verity iOSTests";
+			productName = "Verity iOSTests";
+			productReference = AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF2F76452A96E84100590949 /* Verity iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */;
+			buildPhases = (
+				AF2F76422A96E84100590949 /* Sources */,
+				AF2F76432A96E84100590949 /* Frameworks */,
+				AF2F76442A96E84100590949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2F76482A96E84100590949 /* PBXTargetDependency */,
+			);
+			name = "Verity iOSUITests";
+			productName = "Verity iOSUITests";
+			productReference = AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2F761E2A96E83D00590949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AF2F76252A96E83D00590949 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					AF2F763B2A96E84100590949 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AF2F76252A96E83D00590949;
+					};
+					AF2F76452A96E84100590949 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AF2F76252A96E83D00590949;
+					};
+				};
+			};
+			buildConfigurationList = AF2F76212A96E83D00590949 /* Build configuration list for PBXProject "Verity iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF2F761D2A96E83D00590949;
+			productRefGroup = AF2F76272A96E83D00590949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2F76252A96E83D00590949 /* Verity iOS */,
+				AF2F763B2A96E84100590949 /* Verity iOSTests */,
+				AF2F76452A96E84100590949 /* Verity iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2F76242A96E83D00590949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */,
+				AF2F76332A96E84000590949 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F763A2A96E84100590949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F76442A96E84100590949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2F76222A96E83D00590949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */,
+				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
+				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F76382A96E84100590949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F76422A96E84100590949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */,
+				AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF2F763E2A96E84100590949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2F76252A96E83D00590949 /* Verity iOS */;
+			targetProxy = AF2F763D2A96E84100590949 /* PBXContainerItemProxy */;
+		};
+		AF2F76482A96E84100590949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2F76252A96E83D00590949 /* Verity iOS */;
+			targetProxy = AF2F76472A96E84100590949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF2F76342A96E84000590949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2F76352A96E84000590949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF2F764E2A96E84100590949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF2F764F2A96E84100590949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF2F76512A96E84100590949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Verity iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF2F76522A96E84100590949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Verity iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF2F76542A96E84100590949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verity iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Verity iOS";
+			};
+			name = Debug;
+		};
+		AF2F76552A96E84100590949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verity iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Verity iOS";
+			};
+			name = Release;
+		};
+		AF2F76572A96E84100590949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Verity iOS";
+			};
+			name = Debug;
+		};
+		AF2F76582A96E84100590949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Verity iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2F76212A96E83D00590949 /* Build configuration list for PBXProject "Verity iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F764E2A96E84100590949 /* Debug */,
+				AF2F764F2A96E84100590949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2F76502A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F76512A96E84100590949 /* Debug */,
+				AF2F76522A96E84100590949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2F76532A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F76542A96E84100590949 /* Debug */,
+				AF2F76552A96E84100590949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F76572A96E84100590949 /* Debug */,
+				AF2F76582A96E84100590949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF2F761E2A96E83D00590949 /* Project object */;
+}
