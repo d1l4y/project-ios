@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
 		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
-		AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* ViewController.swift */; };
+		AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* UserListViewController.swift */; };
 		AF2F76332A96E84000590949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76322A96E84000590949 /* Assets.xcassets */; };
 		AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76342A96E84000590949 /* LaunchScreen.storyboard */; };
 		AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76402A96E84100590949 /* Verity_iOSTests.swift */; };
 		AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */; };
 		AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */; };
+		AF2F765B2A96E99700590949 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765A2A96E99700590949 /* User.swift */; };
+		AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */; };
+		AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF2F762D2A96E83D00590949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF2F762D2A96E83D00590949 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		AF2F76322A96E84000590949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2F76352A96E84000590949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF2F76372A96E84000590949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITests.swift; sourceTree = "<group>"; };
 		AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF2F765A2A96E99700590949 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,8 @@
 			children = (
 				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
 				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
-				AF2F762D2A96E83D00590949 /* ViewController.swift */,
+				AF2F765D2A96EA7F00590949 /* Scenes */,
+				AF2F76592A96E98100590949 /* Models */,
 				AF2F76322A96E84000590949 /* Assets.xcassets */,
 				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
 				AF2F76372A96E84000590949 /* Info.plist */,
@@ -122,6 +129,40 @@
 				AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Verity iOSUITests";
+			sourceTree = "<group>";
+		};
+		AF2F76592A96E98100590949 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F765A2A96E99700590949 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF2F765C2A96EA7200590949 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F762D2A96E83D00590949 /* UserListViewController.swift */,
+				AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */,
+				AF2F76612A96EB3E00590949 /* Custom */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		AF2F765D2A96EA7F00590949 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F765C2A96EA7200590949 /* UserList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF2F76612A96EB3E00590949 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */,
+				AF2F765B2A96E99700590949 /* User.swift in Sources */,
+				AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */,
 				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
+				AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */,
+				AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
