@@ -14,14 +14,12 @@ class UserListViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 4
-        layout.minimumInteritemSpacing = 4
-        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom:5, right: 5)
-        layout.itemSize =  CGSize(width: view.frame.width * 0.3, height: view.frame.height * 0.2)
+        layout.minimumLineSpacing = 12
+        layout.minimumInteritemSpacing = 12
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
+        layout.itemSize =  CGSize(width: (view.frame.width / 2) - 24 , height:  (view.frame.height / 3) - 24)
         
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-        
-        collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UserListCollectionViewCell.self, forCellWithReuseIdentifier: UserListCollectionViewCell.reuseIdentifier)
@@ -30,7 +28,7 @@ class UserListViewController: UIViewController {
     }()
     
     //MARK: - Life Cycle
-    init(viewModel: UserListViewModelProtocol = UserListViewModel()) {
+    init(viewModel: UserListViewModelProtocol) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
     }
@@ -44,6 +42,7 @@ class UserListViewController: UIViewController {
         
         setupViews()
         setupUI()
+        bindUI()
     }
     
     //MARK: - Setup
@@ -62,19 +61,55 @@ class UserListViewController: UIViewController {
         view.backgroundColor = .white
         title = "Users"
     }
+    
+    ///TODO:- classe propria pros sizes das constraints, cores e textos
+    private func bindUI() {
+        viewModel?.getUsersList()
+        
+        viewModel?.didUpdateUsersList = {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.collectionView.reloadData()
+            }
+        }
+        
+        viewModel?.didReceiveUserDetails = { userDetails, repositories in
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+            }
+        }
+        
+        viewModel?.showRequestError = { requestError in
+            self.viewModel?.updateShouldFetch(to: false)
+        }
+    }
+    
 }
 
 // MARK: - UICollectionViewDelegate
 extension UserListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let viewModel = viewModel, let currentUserLogin = viewModel.users[indexPath.row].login else { return }
+        
+        viewModel.getUserDetails(user: currentUserLogin)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let scrollViewHeight = scrollView.frame.size.height
+        
+        if contentOffsetY > (contentHeight - scrollViewHeight) {
+            viewModel?.getUsersList()
+        }
     }
 }
 
 // MARK: - UICollectionViewDataSource
 extension UserListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let usersCount = viewModel?.users.count else { return 0}
+        guard let usersCount = viewModel?.users.count else { return 0 }
         return usersCount
     }
     
@@ -83,10 +118,10 @@ extension UserListViewController: UICollectionViewDataSource {
               let currentUser = viewModel?.users[indexPath.row] else {
             return UICollectionViewCell()
         }
-        cell.setupText(currentUser.name ?? "teste")
+        
+        cell.setupText(currentUser.login)
         return cell
     }
     
 }
-
 

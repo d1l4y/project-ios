@@ -8,20 +8,24 @@
 import UIKit
 
 class UserListCollectionViewCell: UICollectionViewCell {
-    static let reuseIdentifier = "UserListCollectionViewCell"
+    static let reuseIdentifier = "UserCollectionViewCell"
 
     // MARK: - Properties
     public lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .black
+        imageView.layer.cornerRadius = 8
+        imageView.clipsToBounds = true
+        imageView.backgroundColor = .white
+        imageView.image = UIImage(systemName: "person.crop.circle.fill")
         return imageView
     }()
     
     private lazy var label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
@@ -32,7 +36,7 @@ class UserListCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -41,9 +45,9 @@ class UserListCollectionViewCell: UICollectionViewCell {
     private func setupView(){
         contentView.addSubview(imageView)
         contentView.addSubview(label)
-        contentView.backgroundColor = .darkGray
+        contentView.backgroundColor = .red
         contentView.layer.cornerRadius = 10
-        imageView.layer.cornerRadius = 8
+
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),
@@ -57,7 +61,21 @@ class UserListCollectionViewCell: UICollectionViewCell {
         ])
     }
     
-    func setupText(_ text: String) {
-        label.text = text
+    func setupText(_ text: String?) {
+        if let text = text {
+            label.text = text
+        }
+    }
+    
+    func setupImage(_ image: UIImage) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.imageView.image = image
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.imageView.image = nil
     }
 }
