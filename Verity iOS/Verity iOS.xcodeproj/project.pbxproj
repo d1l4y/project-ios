@@ -18,6 +18,10 @@
 		AF2F765B2A96E99700590949 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765A2A96E99700590949 /* User.swift */; };
 		AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */; };
 		AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */; };
+		AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76792A98309800590949 /* ApiRoute.swift */; };
+		AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767B2A9830AE00590949 /* RequestHandler.swift */; };
+		AF2F767E2A9830D100590949 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767D2A9830D100590949 /* RequestError.swift */; };
+		AF2F76802A9830E600590949 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767F2A9830E600590949 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		AF2F765A2A96E99700590949 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF2F76792A98309800590949 /* ApiRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoute.swift; sourceTree = "<group>"; };
+		AF2F767B2A9830AE00590949 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		AF2F767D2A9830D100590949 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		AF2F767F2A9830E600590949 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +111,12 @@
 		AF2F76282A96E83D00590949 /* Verity iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
-				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
 				AF2F765D2A96EA7F00590949 /* Scenes */,
 				AF2F76592A96E98100590949 /* Models */,
-				AF2F76322A96E84000590949 /* Assets.xcassets */,
-				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
+				AF2F76772A98301D00590949 /* Network */,
+				AF2F76782A98307600590949 /* Config */,
 				AF2F76372A96E84000590949 /* Info.plist */,
+				AF2F76322A96E84000590949 /* Assets.xcassets */,
 			);
 			path = "Verity iOS";
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2F765A2A96E99700590949 /* User.swift */,
+				AF2F767F2A9830E600590949 /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +171,26 @@
 				AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		AF2F76772A98301D00590949 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76792A98309800590949 /* ApiRoute.swift */,
+				AF2F767B2A9830AE00590949 /* RequestHandler.swift */,
+				AF2F767D2A9830D100590949 /* RequestError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF2F76782A98307600590949 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
+				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
+				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +327,12 @@
 				AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */,
 				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
+				AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */,
 				AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */,
+				AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */,
+				AF2F76802A9830E600590949 /* Repository.swift in Sources */,
 				AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */,
+				AF2F767E2A9830D100590949 /* RequestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
