@@ -32,7 +32,7 @@ class UserListViewModel: UserListViewModelProtocol {
     var presentLoadingView: (() -> Void)?
     var removeLoadingView: (() -> Void)?
     
-    let requestHandler: RequestHandlerProtocol
+    private let requestHandler: RequestHandlerProtocol
     
     private var pagination: Int = 24
     private var shouldFetch: Bool = true
@@ -49,7 +49,7 @@ class UserListViewModel: UserListViewModelProtocol {
         requestHandler.fetchUsersList(pagination: pagination, completion: { [weak self] result in
             guard let self else { return }
             self.removeLoadingView?()
-
+            
             self.shouldFetch = true
             switch result {
             case .success(let users):
@@ -74,24 +74,25 @@ class UserListViewModel: UserListViewModelProtocol {
         
         requestHandler.fetchUserDetails(user: user, completion: { [weak self] result in
             guard let self else { return }
+            
             switch result {
             case .success(let user):
                 userDetails = user
-                group.leave()
             case .failure(let error):
                 self.showRequestError?(error)
             }
+            group.leave()
         })
         
         requestHandler.fetchUserRepo(user: user, completion: { [weak self] result in
             guard let self else { return }
             switch result {
             case .success(let repositories):
-                group.leave()
                 userDetailsRepositories = repositories
             case .failure(let error):
                 self.showRequestError?(error)
             }
+            group.leave()
         })
         
         group.notify(queue: .main, execute: {
@@ -102,11 +103,11 @@ class UserListViewModel: UserListViewModelProtocol {
         })
     }
     
-    private func updatePagination() {
-        pagination += 12
-    }
-    
     func updateShouldFetch(to shouldFetch: Bool) {
         self.shouldFetch = shouldFetch
+    }
+    
+    private func updatePagination() {
+        pagination += 12
     }
 }

@@ -17,7 +17,7 @@ class UserListViewController: UIViewController {
         layout.minimumLineSpacing = 12
         layout.minimumInteritemSpacing = 12
         layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
-        layout.itemSize =  CGSize(width: (view.frame.width / 2) - 24 , height:  (view.frame.height / 3) - 24)
+        layout.itemSize =  CGSize(width: (view.frame.width / 2) - 24 , height:  (view.frame.height / 3.5) - 24)
         
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collectionView.dataSource = self
@@ -27,12 +27,11 @@ class UserListViewController: UIViewController {
         return collectionView
     }()
     
-    let searchButton: SearchButton = {
+    private lazy var searchButton: SearchButton = {
         let button = SearchButton()
            button.translatesAutoresizingMaskIntoConstraints = false
            return button
        }()
-
     
     //MARK: - Initializers
     init(viewModel: UserListViewModelProtocol) {
@@ -121,7 +120,7 @@ class UserListViewController: UIViewController {
         }
     }
     
-    func openAlertAndSearchUser(){
+    private func openAlertAndSearchUser(){
         let alertController = UIAlertController(title: "Search", message: "Enter the GitHub username", preferredStyle: .alert)
         
         alertController.addTextField { textField in
@@ -190,4 +189,3 @@ extension UserListViewController: UICollectionViewDataSource {
     }
     
 }
-
