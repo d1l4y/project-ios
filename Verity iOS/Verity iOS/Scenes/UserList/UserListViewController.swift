@@ -5,6 +5,7 @@
 //  Created by Vinicius Augusto Dilay de Paula on 23/08/23.
 //
 
+
 import UIKit
 
 class UserListViewController: UIViewController {
@@ -62,7 +63,6 @@ class UserListViewController: UIViewController {
         title = "Users"
     }
     
-    ///TODO:- classe propria pros sizes das constraints, cores e textos
     private func bindUI() {
         viewModel?.getUsersList()
         
@@ -81,6 +81,26 @@ class UserListViewController: UIViewController {
         
         viewModel?.showRequestError = { requestError in
             self.viewModel?.updateShouldFetch(to: false)
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.showAlert(message: requestError.asMessage(), completion: {
+                    self.viewModel?.updateShouldFetch(to: true)
+                })
+            }
+        }
+        
+        viewModel?.presentLoadingView = { [weak self] in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                self.showLoadingView()
+            }
+        }
+        
+        viewModel?.removeLoadingView = { [weak self] in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                self.hideLoadingView()
+            }
         }
     }
     
@@ -120,6 +140,15 @@ extension UserListViewController: UICollectionViewDataSource {
         }
         
         cell.setupText(currentUser.login)
+        if let imageName = currentUser.avatar_url {
+            UIImage.getImage(from: imageName, completion: { image in
+                DispatchQueue.main.async {
+                    if let image = image {
+                        cell.setupImage(image)
+                    }
+                }
+            })
+        }
         return cell
     }
     

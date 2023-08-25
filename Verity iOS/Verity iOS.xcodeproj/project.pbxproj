@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5542A983D670027E931 /* LoadingView.swift */; };
 		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
 		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
 		AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* UserListViewController.swift */; };
@@ -22,6 +23,9 @@
 		AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767B2A9830AE00590949 /* RequestHandler.swift */; };
 		AF2F767E2A9830D100590949 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767D2A9830D100590949 /* RequestError.swift */; };
 		AF2F76802A9830E600590949 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767F2A9830E600590949 /* Repository.swift */; };
+		AF2F76832A983A4600590949 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76822A983A4600590949 /* UIColor+Extension.swift */; };
+		AF2F76852A983A6000590949 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76842A983A6000590949 /* UIImage+Extension.swift */; };
+		AF2F76872A983A7900590949 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76862A983A7900590949 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF2DD5542A983D670027E931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +66,9 @@
 		AF2F767B2A9830AE00590949 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		AF2F767D2A9830D100590949 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		AF2F767F2A9830E600590949 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AF2F76822A983A4600590949 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AF2F76842A983A6000590949 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		AF2F76862A983A7900590949 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF2DD5532A983D040027E931 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5542A983D670027E931 /* LoadingView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		AF2F761D2A96E83D00590949 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,7 @@
 				AF2F76772A98301D00590949 /* Network */,
 				AF2F76782A98307600590949 /* Config */,
 				AF2F76372A96E84000590949 /* Info.plist */,
+				AF2F76812A983A3600590949 /* Commons */,
 				AF2F76322A96E84000590949 /* Assets.xcassets */,
 			);
 			path = "Verity iOS";
@@ -161,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2F765C2A96EA7200590949 /* UserList */,
+				AF2DD5532A983D040027E931 /* Commons */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -191,6 +209,16 @@
 				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		AF2F76812A983A3600590949 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76822A983A4600590949 /* UIColor+Extension.swift */,
+				AF2F76842A983A6000590949 /* UIImage+Extension.swift */,
+				AF2F76862A983A7900590949 /* UIViewController+Extension.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,13 +352,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F765B2A96E99700590949 /* User.swift in Sources */,
+				AF2F76872A983A7900590949 /* UIViewController+Extension.swift in Sources */,
 				AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */,
 				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
+				AF2F76852A983A6000590949 /* UIImage+Extension.swift in Sources */,
+				AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
 				AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */,
 				AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */,
 				AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */,
 				AF2F76802A9830E600590949 /* Repository.swift in Sources */,
+				AF2F76832A983A4600590949 /* UIColor+Extension.swift in Sources */,
 				AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */,
 				AF2F767E2A9830D100590949 /* RequestError.swift in Sources */,
 			);
