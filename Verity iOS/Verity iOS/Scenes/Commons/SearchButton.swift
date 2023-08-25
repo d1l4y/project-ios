@@ -24,7 +24,7 @@ class SearchButton: UIButton {
         let configuration = UIImage.SymbolConfiguration(weight: .bold)
         let icon = UIImage(systemName: "magnifyingglass", withConfiguration: configuration)
         setImage(icon, for: .normal)
-        setTitle("Search", for: .normal)
+        setTitle("SearchButtonText".localized(), for: .normal)
         setTitleColor(.white, for: .normal)
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         

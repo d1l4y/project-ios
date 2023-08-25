@@ -13,6 +13,7 @@
 "SearchAlertTextPlaceholder" = "Enter username";
 "SearchAlertCancelButton" = "Cancel";
 "SearchAlertOkButton" = "Search";
+"SearchButtonText" = "Search";
 
 //MARK: - UserDetailsVC
 "RepositoriesLabel" = "Repositories";

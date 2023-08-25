@@ -80,7 +80,6 @@ class UserDetailViewController: UIViewController {
         containerView.addSubview(userDetailsHeaderView)
         containerView.addSubview(repositoriesLabel)
         containerView.addSubview(tableView)
-        tableView.backgroundColor = .red
         
         NSLayoutConstraint.activate([
             containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
