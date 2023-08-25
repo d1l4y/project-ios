@@ -23,7 +23,7 @@ class UserDetailViewController: UIViewController {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 20)
         label.textAlignment = .left
-        label.text = "Repositories"
+        label.text = "RepositoriesLabel".localized()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

@@ -73,8 +73,8 @@ class UserDetailsInformationView: UIView {
     }
     
     func setupData(user: User) {
-        if let twitter_username = user.twitter_username {
-            self.twitterInfoView.setupData(informationType: .twitter, text: "@\(twitter_username)")
+        if let twitterUsername = user.twitter_username {
+            self.twitterInfoView.setupData(informationType: .twitter, text: "InfoViewTwitter".localizedFormat(twitterUsername))
             self.twitterInfoView.isHidden = false
         }
         if let company = user.company {
@@ -86,9 +86,8 @@ class UserDetailsInformationView: UIView {
             self.locationInfoView.setupData(informationType: .location, text: location)
             self.locationInfoView.isHidden = false
         }
-        
         if let followers = user.followers, let following = user.following {
-            self.followersInfoView.setupData(informationType: .followers, text: "\(followers) followers\n\(following) following")
+            self.followersInfoView.setupData(informationType: .followers, text: "InfoViewFollowers".localizedFormat(followers,following))
             self.followersInfoView.isHidden = false
         }
         

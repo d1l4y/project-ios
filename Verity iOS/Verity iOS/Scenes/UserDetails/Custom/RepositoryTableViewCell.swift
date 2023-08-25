@@ -144,7 +144,7 @@ class RepositoryTableViewCell: UITableViewCell {
             let outputFormatter = DateFormatter()
             outputFormatter.dateFormat = "dd/MM/yyyy"
             let formattedDate = outputFormatter.string(from: date)
-            return "Updated on " + formattedDate
+            return "updatedDateRepoViewCell".localizedFormat(formattedDate)
         }
         return ""
     }

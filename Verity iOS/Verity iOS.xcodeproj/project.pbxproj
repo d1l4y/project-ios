@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF22444E2A9901300059E67B /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22444D2A9901300059E67B /* RequestHandlerTests.swift */; };
+		AF2244522A9907BB0059E67B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2244512A9907BB0059E67B /* Localizable.strings */; };
+		AF2244542A990A430059E67B /* UIString+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2244532A990A430059E67B /* UIString+Localizable.swift */; };
 		AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5542A983D670027E931 /* LoadingView.swift */; };
 		AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5582A9846B00027E931 /* SearchButton.swift */; };
 		AF2DD5662A98DC810027E931 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		AF22444D2A9901300059E67B /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
+		AF2244512A9907BB0059E67B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AF2244532A990A430059E67B /* UIString+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Localizable.swift"; sourceTree = "<group>"; };
 		AF2DD5542A983D670027E931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AF2DD5582A9846B00027E931 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 				AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		AF2244502A9907A70059E67B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76322A96E84000590949 /* Assets.xcassets */,
+				AF2244512A9907BB0059E67B /* Localizable.strings */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		AF2DD5532A983D040027E931 /* Commons */ = {
@@ -168,9 +181,9 @@
 				AF2F76592A96E98100590949 /* Models */,
 				AF2F76772A98301D00590949 /* Network */,
 				AF2F76782A98307600590949 /* Config */,
-				AF2F76372A96E84000590949 /* Info.plist */,
 				AF2F76812A983A3600590949 /* Commons */,
-				AF2F76322A96E84000590949 /* Assets.xcassets */,
+				AF2F76372A96E84000590949 /* Info.plist */,
+				AF2244502A9907A70059E67B /* Assets */,
 			);
 			path = "Verity iOS";
 			sourceTree = "<group>";
@@ -249,6 +262,7 @@
 				AF2F76842A983A6000590949 /* UIImage+Extension.swift */,
 				AF2F76862A983A7900590949 /* UIViewController+Extension.swift */,
 				AF2DD5732A98DD860027E931 /* UIView+Extension.swift */,
+				AF2244532A990A430059E67B /* UIString+Localizable.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -335,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */,
+				AF2244522A9907BB0059E67B /* Localizable.strings in Resources */,
 				AF2F76332A96E84000590949 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +379,7 @@
 				AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */,
 				AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
+				AF2244542A990A430059E67B /* UIString+Localizable.swift in Sources */,
 				AF2DD5682A98DC930027E931 /* UserDetailsViewModel.swift in Sources */,
 				AF2DD56F2A98DCE40027E931 /* UserDetailsInformationView.swift in Sources */,
 				AF2DD56B2A98DCBE0027E931 /* RepositoryTableViewCell.swift in Sources */,

@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Verity iOS
+
+  Created by Vinicius Augusto Dilay de Paula on 25/08/23.
+  
+*/
+
+//MARK: - UserListVC
+"UserListTitle" = "User";
+"SearchAlertTitle" = "Search";
+"SearchAlertMessage" = "Enter the GitHub username";
+"SearchAlertTextPlaceholder" = "Enter username";
+"SearchAlertCancelButton" = "Cancel";
+"SearchAlertOkButton" = "Search";
+
+//MARK: - UserDetailsVC
+"RepositoriesLabel" = "Repositories";
+"InfoViewTwitter" = "@%@";
+"InfoViewFollowers" = "%d followers\n%d following";
+"updatedDateRepoViewCell" = "Updated on %@";

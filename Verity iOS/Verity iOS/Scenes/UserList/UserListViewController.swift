@@ -71,7 +71,7 @@ class UserListViewController: UIViewController {
     
     private func setupUI(){
         view.backgroundColor = .white
-        title = "Users"
+        title = "UserListTitle".localized()
     }
     
     private func bindUI() {
@@ -128,20 +128,20 @@ class UserListViewController: UIViewController {
     
     ///currently there is an iOS bug that shows a warning in the log when adding a textField to a Alert Controller https://stackoverflow.com/questions/75242313/uicollectionviewcell-translatesautoresizingmaskintoconstraints-property-warning
     private func openAlertAndSearchUser(){
-        let alertController = UIAlertController(title: "Search", message: "Enter the GitHub username", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "SearchAlertTitle".localized(), message: "SearchAlertMessage".localized(), preferredStyle: .alert)
         
         alertController.addTextField { textField in
-            textField.placeholder = "Enter username"
+            textField.placeholder = "SearchAlertTextPlaceholder".localized()
         }
         
-        let searchAction = UIAlertAction(title: "Search", style: .default) {[weak self] _ in
+        let searchAction = UIAlertAction(title: "SearchAlertOkButton".localized(), style: .default) {[weak self] _ in
             if let self,
                let textField = alertController.textFields?.first,
                let username = textField.text?.replacingOccurrences(of: " ", with: "") {
                 self.viewModel?.getUserDetails(user: username)
             }
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "SearchAlertCancelButton".localized(), style: .cancel, handler: nil)
         
         alertController.addAction(cancelAction)
         alertController.addAction(searchAction)
