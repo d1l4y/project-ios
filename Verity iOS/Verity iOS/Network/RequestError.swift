@@ -33,7 +33,7 @@ struct RequestError: Error {
     }
 }
 
-enum RequestErrorType {
+enum RequestErrorType: Equatable {
     case unknownError
     case invalidStatusCode
     case decodingError

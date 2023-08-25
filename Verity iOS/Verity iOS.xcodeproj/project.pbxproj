@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF22444E2A9901300059E67B /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22444D2A9901300059E67B /* RequestHandlerTests.swift */; };
 		AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5542A983D670027E931 /* LoadingView.swift */; };
 		AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5582A9846B00027E931 /* SearchButton.swift */; };
 		AF2DD5662A98DC810027E931 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */; };
@@ -16,14 +17,13 @@
 		AF2DD56F2A98DCE40027E931 /* UserDetailsInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD56E2A98DCE40027E931 /* UserDetailsInformationView.swift */; };
 		AF2DD5712A98DCF30027E931 /* UserDetailsInformationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5702A98DCF30027E931 /* UserDetailsInformationCardView.swift */; };
 		AF2DD5742A98DD860027E931 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5732A98DD860027E931 /* UIView+Extension.swift */; };
+		AF2DD5762A98E8980027E931 /* MockRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */; };
+		AF2DD5782A98F7BA0027E931 /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */; };
 		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
 		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
 		AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* UserListViewController.swift */; };
 		AF2F76332A96E84000590949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76322A96E84000590949 /* Assets.xcassets */; };
 		AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76342A96E84000590949 /* LaunchScreen.storyboard */; };
-		AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76402A96E84100590949 /* Verity_iOSTests.swift */; };
-		AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */; };
-		AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */; };
 		AF2F765B2A96E99700590949 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765A2A96E99700590949 /* User.swift */; };
 		AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */; };
 		AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */; };
@@ -44,16 +44,10 @@
 			remoteGlobalIDString = AF2F76252A96E83D00590949;
 			remoteInfo = "Verity iOS";
 		};
-		AF2F76472A96E84100590949 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF2F761E2A96E83D00590949 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF2F76252A96E83D00590949;
-			remoteInfo = "Verity iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF22444D2A9901300059E67B /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
 		AF2DD5542A983D670027E931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AF2DD5582A9846B00027E931 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +57,8 @@
 		AF2DD56E2A98DCE40027E931 /* UserDetailsInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInformationView.swift; sourceTree = "<group>"; };
 		AF2DD5702A98DCF30027E931 /* UserDetailsInformationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInformationCardView.swift; sourceTree = "<group>"; };
 		AF2DD5732A98DD860027E931 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestHandler.swift; sourceTree = "<group>"; };
+		AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelTests.swift; sourceTree = "<group>"; };
 		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +67,6 @@
 		AF2F76352A96E84000590949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF2F76372A96E84000590949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2F76402A96E84100590949 /* Verity_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSTests.swift; sourceTree = "<group>"; };
-		AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITests.swift; sourceTree = "<group>"; };
-		AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AF2F765A2A96E99700590949 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -102,16 +94,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF2F76432A96E84100590949 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF22444F2A9901410059E67B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		AF2DD5532A983D040027E931 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +148,6 @@
 			children = (
 				AF2F76282A96E83D00590949 /* Verity iOS */,
 				AF2F763F2A96E84100590949 /* Verity iOSTests */,
-				AF2F76492A96E84100590949 /* Verity iOSUITests */,
 				AF2F76272A96E83D00590949 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,7 +157,6 @@
 			children = (
 				AF2F76262A96E83D00590949 /* Verity iOS.app */,
 				AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */,
-				AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,18 +178,11 @@
 		AF2F763F2A96E84100590949 /* Verity iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF2F76402A96E84100590949 /* Verity_iOSTests.swift */,
+				AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */,
+				AF22444D2A9901300059E67B /* RequestHandlerTests.swift */,
+				AF22444F2A9901410059E67B /* Mock */,
 			);
 			path = "Verity iOSTests";
-			sourceTree = "<group>";
-		};
-		AF2F76492A96E84100590949 /* Verity iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */,
-				AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */,
-			);
-			path = "Verity iOSUITests";
 			sourceTree = "<group>";
 		};
 		AF2F76592A96E98100590949 /* Models */ = {
@@ -307,24 +291,6 @@
 			productReference = AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AF2F76452A96E84100590949 /* Verity iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */;
-			buildPhases = (
-				AF2F76422A96E84100590949 /* Sources */,
-				AF2F76432A96E84100590949 /* Frameworks */,
-				AF2F76442A96E84100590949 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF2F76482A96E84100590949 /* PBXTargetDependency */,
-			);
-			name = "Verity iOSUITests";
-			productName = "Verity iOSUITests";
-			productReference = AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,10 +305,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					AF2F763B2A96E84100590949 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = AF2F76252A96E83D00590949;
-					};
-					AF2F76452A96E84100590949 = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = AF2F76252A96E83D00590949;
 					};
@@ -363,7 +325,6 @@
 			targets = (
 				AF2F76252A96E83D00590949 /* Verity iOS */,
 				AF2F763B2A96E84100590949 /* Verity iOSTests */,
-				AF2F76452A96E84100590949 /* Verity iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,13 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AF2F763A2A96E84100590949 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF2F76442A96E84100590949 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,16 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF2F76422A96E84100590949 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */,
-				AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */,
+				AF2DD5782A98F7BA0027E931 /* UserListViewModelTests.swift in Sources */,
+				AF2DD5762A98E8980027E931 /* MockRequestHandler.swift in Sources */,
+				AF22444E2A9901300059E67B /* RequestHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +395,6 @@
 			isa = PBXTargetDependency;
 			target = AF2F76252A96E83D00590949 /* Verity iOS */;
 			targetProxy = AF2F763D2A96E84100590949 /* PBXContainerItemProxy */;
-		};
-		AF2F76482A96E84100590949 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF2F76252A96E83D00590949 /* Verity iOS */;
-			targetProxy = AF2F76472A96E84100590949 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -672,40 +614,6 @@
 			};
 			name = Release;
 		};
-		AF2F76572A96E84100590949 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Verity iOS";
-			};
-			name = Debug;
-		};
-		AF2F76582A96E84100590949 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Verity iOS";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -732,15 +640,6 @@
 			buildConfigurations = (
 				AF2F76542A96E84100590949 /* Debug */,
 				AF2F76552A96E84100590949 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF2F76572A96E84100590949 /* Debug */,
-				AF2F76582A96E84100590949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

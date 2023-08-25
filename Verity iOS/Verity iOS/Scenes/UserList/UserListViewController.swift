@@ -154,7 +154,6 @@ extension UserListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let viewModel = viewModel, let currentUserLogin = viewModel.users[indexPath.row].login else { return }
-        
         viewModel.getUserDetails(user: currentUserLogin)
     }
     
