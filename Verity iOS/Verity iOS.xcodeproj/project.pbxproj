@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF22444E2A9901300059E67B /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22444D2A9901300059E67B /* RequestHandlerTests.swift */; };
+		AF2244522A9907BB0059E67B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2244512A9907BB0059E67B /* Localizable.strings */; };
+		AF2244542A990A430059E67B /* UIString+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2244532A990A430059E67B /* UIString+Localizable.swift */; };
+		AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5542A983D670027E931 /* LoadingView.swift */; };
+		AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5582A9846B00027E931 /* SearchButton.swift */; };
+		AF2DD5662A98DC810027E931 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */; };
+		AF2DD5682A98DC930027E931 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5672A98DC930027E931 /* UserDetailsViewModel.swift */; };
+		AF2DD56B2A98DCBE0027E931 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD56A2A98DCBE0027E931 /* RepositoryTableViewCell.swift */; };
+		AF2DD56D2A98DCD90027E931 /* UserDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD56C2A98DCD90027E931 /* UserDetailsHeader.swift */; };
+		AF2DD56F2A98DCE40027E931 /* UserDetailsInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD56E2A98DCE40027E931 /* UserDetailsInformationView.swift */; };
+		AF2DD5712A98DCF30027E931 /* UserDetailsInformationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5702A98DCF30027E931 /* UserDetailsInformationCardView.swift */; };
+		AF2DD5742A98DD860027E931 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5732A98DD860027E931 /* UIView+Extension.swift */; };
+		AF2DD5762A98E8980027E931 /* MockRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */; };
+		AF2DD5782A98F7BA0027E931 /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */; };
 		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
 		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
-		AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* ViewController.swift */; };
+		AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* UserListViewController.swift */; };
 		AF2F76332A96E84000590949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76322A96E84000590949 /* Assets.xcassets */; };
 		AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F76342A96E84000590949 /* LaunchScreen.storyboard */; };
-		AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76402A96E84100590949 /* Verity_iOSTests.swift */; };
-		AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */; };
-		AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */; };
+		AF2F765B2A96E99700590949 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765A2A96E99700590949 /* User.swift */; };
+		AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */; };
+		AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */; };
+		AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76792A98309800590949 /* ApiRoute.swift */; };
+		AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767B2A9830AE00590949 /* RequestHandler.swift */; };
+		AF2F767E2A9830D100590949 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767D2A9830D100590949 /* RequestError.swift */; };
+		AF2F76802A9830E600590949 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F767F2A9830E600590949 /* Repository.swift */; };
+		AF2F76832A983A4600590949 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76822A983A4600590949 /* UIColor+Extension.swift */; };
+		AF2F76852A983A6000590949 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76842A983A6000590949 /* UIImage+Extension.swift */; };
+		AF2F76872A983A7900590949 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76862A983A7900590949 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,28 +46,41 @@
 			remoteGlobalIDString = AF2F76252A96E83D00590949;
 			remoteInfo = "Verity iOS";
 		};
-		AF2F76472A96E84100590949 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF2F761E2A96E83D00590949 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF2F76252A96E83D00590949;
-			remoteInfo = "Verity iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF22444D2A9901300059E67B /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
+		AF2244512A9907BB0059E67B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AF2244532A990A430059E67B /* UIString+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Localizable.swift"; sourceTree = "<group>"; };
+		AF2DD5542A983D670027E931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AF2DD5582A9846B00027E931 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		AF2DD5672A98DC930027E931 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		AF2DD56A2A98DCBE0027E931 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		AF2DD56C2A98DCD90027E931 /* UserDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsHeader.swift; sourceTree = "<group>"; };
+		AF2DD56E2A98DCE40027E931 /* UserDetailsInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInformationView.swift; sourceTree = "<group>"; };
+		AF2DD5702A98DCF30027E931 /* UserDetailsInformationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInformationCardView.swift; sourceTree = "<group>"; };
+		AF2DD5732A98DD860027E931 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestHandler.swift; sourceTree = "<group>"; };
+		AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelTests.swift; sourceTree = "<group>"; };
 		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF2F762D2A96E83D00590949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF2F762D2A96E83D00590949 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		AF2F76322A96E84000590949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2F76352A96E84000590949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF2F76372A96E84000590949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2F76402A96E84100590949 /* Verity_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSTests.swift; sourceTree = "<group>"; };
-		AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Verity iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITests.swift; sourceTree = "<group>"; };
-		AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verity_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF2F765A2A96E99700590949 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF2F76792A98309800590949 /* ApiRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoute.swift; sourceTree = "<group>"; };
+		AF2F767B2A9830AE00590949 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		AF2F767D2A9830D100590949 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		AF2F767F2A9830E600590949 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AF2F76822A983A4600590949 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AF2F76842A983A6000590949 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		AF2F76862A983A7900590949 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,22 +98,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF2F76432A96E84100590949 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF22444F2A9901410059E67B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5752A98E8980027E931 /* MockRequestHandler.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		AF2244502A9907A70059E67B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76322A96E84000590949 /* Assets.xcassets */,
+				AF2244512A9907BB0059E67B /* Localizable.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AF2DD5532A983D040027E931 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5542A983D670027E931 /* LoadingView.swift */,
+				AF2DD5582A9846B00027E931 /* SearchButton.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		AF2DD5642A98DC6C0027E931 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5652A98DC810027E931 /* UserDetailsViewController.swift */,
+				AF2DD5672A98DC930027E931 /* UserDetailsViewModel.swift */,
+				AF2DD5692A98DCA30027E931 /* Custom */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		AF2DD5692A98DCA30027E931 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD5722A98DD1A0027E931 /* Header */,
+				AF2DD56A2A98DCBE0027E931 /* RepositoryTableViewCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		AF2DD5722A98DD1A0027E931 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AF2DD56C2A98DCD90027E931 /* UserDetailsHeader.swift */,
+				AF2DD56E2A98DCE40027E931 /* UserDetailsInformationView.swift */,
+				AF2DD5702A98DCF30027E931 /* UserDetailsInformationCardView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		AF2F761D2A96E83D00590949 = {
 			isa = PBXGroup;
 			children = (
 				AF2F76282A96E83D00590949 /* Verity iOS */,
 				AF2F763F2A96E84100590949 /* Verity iOSTests */,
-				AF2F76492A96E84100590949 /* Verity iOSUITests */,
 				AF2F76272A96E83D00590949 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +170,6 @@
 			children = (
 				AF2F76262A96E83D00590949 /* Verity iOS.app */,
 				AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */,
-				AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +177,13 @@
 		AF2F76282A96E83D00590949 /* Verity iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
-				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
-				AF2F762D2A96E83D00590949 /* ViewController.swift */,
-				AF2F76322A96E84000590949 /* Assets.xcassets */,
-				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
+				AF2F765D2A96EA7F00590949 /* Scenes */,
+				AF2F76592A96E98100590949 /* Models */,
+				AF2F76772A98301D00590949 /* Network */,
+				AF2F76782A98307600590949 /* Config */,
+				AF2F76812A983A3600590949 /* Commons */,
 				AF2F76372A96E84000590949 /* Info.plist */,
+				AF2244502A9907A70059E67B /* Assets */,
 			);
 			path = "Verity iOS";
 			sourceTree = "<group>";
@@ -110,18 +191,80 @@
 		AF2F763F2A96E84100590949 /* Verity iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF2F76402A96E84100590949 /* Verity_iOSTests.swift */,
+				AF2DD5772A98F7BA0027E931 /* UserListViewModelTests.swift */,
+				AF22444D2A9901300059E67B /* RequestHandlerTests.swift */,
+				AF22444F2A9901410059E67B /* Mock */,
 			);
 			path = "Verity iOSTests";
 			sourceTree = "<group>";
 		};
-		AF2F76492A96E84100590949 /* Verity iOSUITests */ = {
+		AF2F76592A96E98100590949 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AF2F764A2A96E84100590949 /* Verity_iOSUITests.swift */,
-				AF2F764C2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift */,
+				AF2F765A2A96E99700590949 /* User.swift */,
+				AF2F767F2A9830E600590949 /* Repository.swift */,
 			);
-			path = "Verity iOSUITests";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF2F765C2A96EA7200590949 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F762D2A96E83D00590949 /* UserListViewController.swift */,
+				AF2F765E2A96EA9E00590949 /* UserListViewModel.swift */,
+				AF2F76612A96EB3E00590949 /* Custom */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		AF2F765D2A96EA7F00590949 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F765C2A96EA7200590949 /* UserList */,
+				AF2DD5642A98DC6C0027E931 /* UserDetails */,
+				AF2DD5532A983D040027E931 /* Commons */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF2F76612A96EB3E00590949 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76622A96EB4E00590949 /* UserListCollectionViewCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		AF2F76772A98301D00590949 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76792A98309800590949 /* ApiRoute.swift */,
+				AF2F767B2A9830AE00590949 /* RequestHandler.swift */,
+				AF2F767D2A9830D100590949 /* RequestError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF2F76782A98307600590949 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76292A96E83D00590949 /* AppDelegate.swift */,
+				AF2F762B2A96E83D00590949 /* SceneDelegate.swift */,
+				AF2F76342A96E84000590949 /* LaunchScreen.storyboard */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AF2F76812A983A3600590949 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F76822A983A4600590949 /* UIColor+Extension.swift */,
+				AF2F76842A983A6000590949 /* UIImage+Extension.swift */,
+				AF2F76862A983A7900590949 /* UIViewController+Extension.swift */,
+				AF2DD5732A98DD860027E931 /* UIView+Extension.swift */,
+				AF2244532A990A430059E67B /* UIString+Localizable.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,24 +305,6 @@
 			productReference = AF2F763C2A96E84100590949 /* Verity iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AF2F76452A96E84100590949 /* Verity iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */;
-			buildPhases = (
-				AF2F76422A96E84100590949 /* Sources */,
-				AF2F76432A96E84100590949 /* Frameworks */,
-				AF2F76442A96E84100590949 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF2F76482A96E84100590949 /* PBXTargetDependency */,
-			);
-			name = "Verity iOSUITests";
-			productName = "Verity iOSUITests";
-			productReference = AF2F76462A96E84100590949 /* Verity iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +319,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					AF2F763B2A96E84100590949 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = AF2F76252A96E83D00590949;
-					};
-					AF2F76452A96E84100590949 = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = AF2F76252A96E83D00590949;
 					};
@@ -218,7 +339,6 @@
 			targets = (
 				AF2F76252A96E83D00590949 /* Verity iOS */,
 				AF2F763B2A96E84100590949 /* Verity iOSTests */,
-				AF2F76452A96E84100590949 /* Verity iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,18 +349,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F76362A96E84000590949 /* LaunchScreen.storyboard in Resources */,
+				AF2244522A9907BB0059E67B /* Localizable.strings in Resources */,
 				AF2F76332A96E84000590949 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AF2F763A2A96E84100590949 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF2F76442A96E84100590949 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,9 +368,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F762E2A96E83D00590949 /* ViewController.swift in Sources */,
+				AF2DD5742A98DD860027E931 /* UIView+Extension.swift in Sources */,
+				AF2F765B2A96E99700590949 /* User.swift in Sources */,
+				AF2F76872A983A7900590949 /* UIViewController+Extension.swift in Sources */,
+				AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */,
 				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
+				AF2F76852A983A6000590949 /* UIImage+Extension.swift in Sources */,
+				AF2DD56D2A98DCD90027E931 /* UserDetailsHeader.swift in Sources */,
+				AF2DD5712A98DCF30027E931 /* UserDetailsInformationCardView.swift in Sources */,
+				AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */,
+				AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
+				AF2244542A990A430059E67B /* UIString+Localizable.swift in Sources */,
+				AF2DD5682A98DC930027E931 /* UserDetailsViewModel.swift in Sources */,
+				AF2DD56F2A98DCE40027E931 /* UserDetailsInformationView.swift in Sources */,
+				AF2DD56B2A98DCBE0027E931 /* RepositoryTableViewCell.swift in Sources */,
+				AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */,
+				AF2F76632A96EB4E00590949 /* UserListCollectionViewCell.swift in Sources */,
+				AF2F767C2A9830AE00590949 /* RequestHandler.swift in Sources */,
+				AF2F76802A9830E600590949 /* Repository.swift in Sources */,
+				AF2F76832A983A4600590949 /* UIColor+Extension.swift in Sources */,
+				AF2F765F2A96EA9E00590949 /* UserListViewModel.swift in Sources */,
+				AF2DD5662A98DC810027E931 /* UserDetailsViewController.swift in Sources */,
+				AF2F767E2A9830D100590949 /* RequestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,16 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F76412A96E84100590949 /* Verity_iOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF2F76422A96E84100590949 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF2F764B2A96E84100590949 /* Verity_iOSUITests.swift in Sources */,
-				AF2F764D2A96E84100590949 /* Verity_iOSUITestsLaunchTests.swift in Sources */,
+				AF2DD5782A98F7BA0027E931 /* UserListViewModelTests.swift in Sources */,
+				AF2DD5762A98E8980027E931 /* MockRequestHandler.swift in Sources */,
+				AF22444E2A9901300059E67B /* RequestHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +411,6 @@
 			isa = PBXTargetDependency;
 			target = AF2F76252A96E83D00590949 /* Verity iOS */;
 			targetProxy = AF2F763D2A96E84100590949 /* PBXContainerItemProxy */;
-		};
-		AF2F76482A96E84100590949 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF2F76252A96E83D00590949 /* Verity iOS */;
-			targetProxy = AF2F76472A96E84100590949 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +549,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Verity iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Users";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -453,6 +576,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Verity iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Users";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -508,40 +632,6 @@
 			};
 			name = Release;
 		};
-		AF2F76572A96E84100590949 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Verity iOS";
-			};
-			name = Debug;
-		};
-		AF2F76582A96E84100590949 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dilay.Verity-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Verity iOS";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +658,6 @@
 			buildConfigurations = (
 				AF2F76542A96E84100590949 /* Debug */,
 				AF2F76552A96E84100590949 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF2F76562A96E84100590949 /* Build configuration list for PBXNativeTarget "Verity iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF2F76572A96E84100590949 /* Debug */,
-				AF2F76582A96E84100590949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
