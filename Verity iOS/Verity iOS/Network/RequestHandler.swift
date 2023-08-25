@@ -74,12 +74,6 @@ class RequestHandler: RequestHandlerProtocol {
     
     private func apiCall(url: URLRequest, completion: @escaping (Result<Data, RequestError>) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data {
-                if let jsonString = String(data: data, encoding: .utf8) {
-                    print("JSON Response:\n\(jsonString)")
-                }
-            }
-
             if let error = error {
                 if let urlError = error as? URLError, urlError.code == URLError.notConnectedToInternet {
                     let requestError = RequestError(code: 0, type: .noInternet)

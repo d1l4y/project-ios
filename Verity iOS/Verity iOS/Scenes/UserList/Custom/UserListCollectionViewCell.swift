@@ -9,7 +9,7 @@ import UIKit
 
 class UserListCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "UserListCollectionViewCell"
-    
+
     // MARK: - Properties
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -37,18 +37,18 @@ class UserListCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     //MARK: - Setup
     private func setupView(){
         contentView.addSubview(imageView)
         contentView.addSubview(label)
         contentView.backgroundColor = .defaultDarkGreenColor
         contentView.layer.cornerRadius = 10
-        
+
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),

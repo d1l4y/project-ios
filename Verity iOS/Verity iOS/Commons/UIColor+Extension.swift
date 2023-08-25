@@ -9,10 +9,10 @@ import UIKit
 
 extension UIColor {
     public static let defaultDarkGreenColor = UIColor(hexString: "#11201A")
+    public static let defaultSecondaryDarkGreenColor = UIColor(hexString: "#2B7E2E")
     public static let defaultGreenColor = UIColor(hexString: "#97DA53")
-    public static let defaultGreenButtonColor = UIColor(hexString: "#CAFFA0")
-    public static let defaultDarkGreenButtonColor = UIColor(hexString: "#2B7E2E")
-
+    public static let defaultLightGreenColor = UIColor(hexString: "#CAFFA0")
+    
     convenience init?(hexString: String?) {
         let input: String! = (hexString ?? "")
             .replacingOccurrences(of: "#", with: "")

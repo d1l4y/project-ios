@@ -17,11 +17,9 @@ class SearchButton: UIButton {
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupButton()
+        fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - Setup
     private func setupButton() {
         let configuration = UIImage.SymbolConfiguration(weight: .bold)
         let icon = UIImage(systemName: "magnifyingglass", withConfiguration: configuration)
@@ -30,7 +28,7 @@ class SearchButton: UIButton {
         setTitleColor(.white, for: .normal)
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         
-        backgroundColor = .defaultDarkGreenButtonColor
+        backgroundColor = .defaultSecondaryDarkGreenColor
         imageView?.tintColor = .white
         layer.cornerRadius = 20
         

@@ -87,6 +87,10 @@ class UserListViewController: UIViewController {
         viewModel?.didReceiveUserDetails = { userDetails, repositories in
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
+                
+                let viewModel = UserDetailsViewModel(user: userDetails, repos: repositories)
+                let viewController = UserDetailViewController(viewModel: viewModel)
+                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
         
@@ -100,26 +104,29 @@ class UserListViewController: UIViewController {
             }
         }
         
-        viewModel?.presentLoadingView = { [weak self] in
-            DispatchQueue.main.async {
+        viewModel?.presentLoadingView = {
+            DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
                 self.showLoadingView()
             }
         }
         
-        viewModel?.removeLoadingView = { [weak self] in
-            DispatchQueue.main.async {
+        viewModel?.removeLoadingView = {
+            DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
                 self.hideLoadingView()
             }
         }
         
-        searchButton.actionHandler = { [weak self] in
-            guard let self else { return }
-            self.openAlertAndSearchUser()
+        searchButton.actionHandler = {
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
+                self.openAlertAndSearchUser()
+            }
         }
     }
     
+    ///currently there is an iOS bug that shows a warning in the log when adding a textField to a Alert Controller https://stackoverflow.com/questions/75242313/uicollectionviewcell-translatesautoresizingmaskintoconstraints-property-warning
     private func openAlertAndSearchUser(){
         let alertController = UIAlertController(title: "Search", message: "Enter the GitHub username", preferredStyle: .alert)
         
@@ -127,7 +134,6 @@ class UserListViewController: UIViewController {
             textField.placeholder = "Enter username"
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         let searchAction = UIAlertAction(title: "Search", style: .default) {[weak self] _ in
             if let self,
                let textField = alertController.textFields?.first,
@@ -135,6 +141,7 @@ class UserListViewController: UIViewController {
                 self.viewModel?.getUserDetails(user: username)
             }
         }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alertController.addAction(cancelAction)
         alertController.addAction(searchAction)
