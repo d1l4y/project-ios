@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5542A983D670027E931 /* LoadingView.swift */; };
+		AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD5582A9846B00027E931 /* SearchButton.swift */; };
 		AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F76292A96E83D00590949 /* AppDelegate.swift */; };
 		AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762B2A96E83D00590949 /* SceneDelegate.swift */; };
 		AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F762D2A96E83D00590949 /* UserListViewController.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		AF2DD5542A983D670027E931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AF2DD5582A9846B00027E931 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		AF2F76262A96E83D00590949 /* Verity iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Verity iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F76292A96E83D00590949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF2F762B2A96E83D00590949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2DD5542A983D670027E931 /* LoadingView.swift */,
+				AF2DD5582A9846B00027E931 /* SearchButton.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				AF2F762E2A96E83D00590949 /* UserListViewController.swift in Sources */,
 				AF2F762A2A96E83D00590949 /* AppDelegate.swift in Sources */,
 				AF2F76852A983A6000590949 /* UIImage+Extension.swift in Sources */,
+				AF2DD5592A9846B00027E931 /* SearchButton.swift in Sources */,
 				AF2DD5552A983D670027E931 /* LoadingView.swift in Sources */,
 				AF2F762C2A96E83D00590949 /* SceneDelegate.swift in Sources */,
 				AF2F767A2A98309800590949 /* ApiRoute.swift in Sources */,

@@ -5,7 +5,6 @@
 //  Created by Vinicius Augusto Dilay de Paula on 23/08/23.
 //
 
-
 import UIKit
 
 class UserListViewController: UIViewController {
@@ -28,7 +27,14 @@ class UserListViewController: UIViewController {
         return collectionView
     }()
     
-    //MARK: - Life Cycle
+    let searchButton: SearchButton = {
+        let button = SearchButton()
+           button.translatesAutoresizingMaskIntoConstraints = false
+           return button
+       }()
+
+    
+    //MARK: - Initializers
     init(viewModel: UserListViewModelProtocol) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
@@ -49,12 +55,18 @@ class UserListViewController: UIViewController {
     //MARK: - Setup
     private func setupViews() {
         view.addSubview(collectionView)
-        
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+        ])
+        
+        view.addSubview(searchButton)
+        NSLayoutConstraint.activate([
+            searchButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            searchButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            searchButton.widthAnchor.constraint(equalToConstant: 150),            searchButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -102,10 +114,35 @@ class UserListViewController: UIViewController {
                 self.hideLoadingView()
             }
         }
+        
+        searchButton.actionHandler = { [weak self] in
+            guard let self else { return }
+            self.openAlertAndSearchUser()
+        }
     }
     
+    func openAlertAndSearchUser(){
+        let alertController = UIAlertController(title: "Search", message: "Enter the GitHub username", preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter username"
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let searchAction = UIAlertAction(title: "Search", style: .default) {[weak self] _ in
+            if let self,
+               let textField = alertController.textFields?.first,
+               let username = textField.text?.replacingOccurrences(of: " ", with: "") {
+                self.viewModel?.getUserDetails(user: username)
+            }
+        }
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(searchAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }
-
 // MARK: - UICollectionViewDelegate
 extension UserListViewController: UICollectionViewDelegate {
     

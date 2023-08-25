@@ -8,6 +8,7 @@
 import UIKit
 
 class LoadingView: UIView {
+    //MARK: - Properties
     private let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .large)
         indicator.color = .white
@@ -22,6 +23,7 @@ class LoadingView: UIView {
         return blurView
     }()
     
+    //MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -32,6 +34,7 @@ class LoadingView: UIView {
         setupView()
     }
     
+    //MARK: - Setup
     private func setupView() {
         addSubview(blurEffectView)
         blurEffectView.frame = bounds

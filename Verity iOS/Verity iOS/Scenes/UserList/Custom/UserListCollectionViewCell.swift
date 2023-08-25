@@ -8,17 +8,18 @@
 import UIKit
 
 class UserListCollectionViewCell: UICollectionViewCell {
-    static let reuseIdentifier = "UserCollectionViewCell"
+    static let reuseIdentifier = "UserListCollectionViewCell"
 
     // MARK: - Properties
     public lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 8
-        imageView.clipsToBounds = true
         imageView.backgroundColor = .white
-        imageView.image = UIImage(systemName: "person.crop.circle.fill")
+        imageView.tintColor = .black
+        imageView.image = UIImage(systemName: "person.fill")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -45,7 +46,7 @@ class UserListCollectionViewCell: UICollectionViewCell {
     private func setupView(){
         contentView.addSubview(imageView)
         contentView.addSubview(label)
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = .defaultDarkGreenColor
         contentView.layer.cornerRadius = 10
 
         NSLayoutConstraint.activate([
